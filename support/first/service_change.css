@@ -1227,8 +1227,9 @@ h2.heading strong {
 		bottom: 49px;
 	}
 	#service-first #worries h3 {
-		font-size: 17px;
 		padding-left: 0;
+		font-size: 17px;
+		line-height: 1.5;
 	}
 	#service-first #worries .approach {
 		padding: 0 0 105px;
