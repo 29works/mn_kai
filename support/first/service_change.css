@@ -519,6 +519,9 @@ h2.heading strong {
 	}
 }
 @media only screen and (max-width: 639px) {
+	.cf_anim .car {
+		bottom: 20px;
+	}
 	.cf_anim .c02,
 	.cf_anim .c02 img {
 		width: 60px;
