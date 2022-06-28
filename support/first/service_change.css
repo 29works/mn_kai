@@ -1028,6 +1028,7 @@ h2.heading strong {
 #service-first #how .how-item .resolution .text::before {
 	width: 75px;
 	height: 70px;
+	top: -38px;
 }
 #service-first #how .how-item .content .text p,
 #service-first #how .how-item .resolution .text p {
