@@ -1093,6 +1093,7 @@ h2.heading strong {
 	#service-first #how .how-item .resolution .text::before {
 		width: 49px;
 		height: 45px;
+		top: -15px;
 	}
 	#service-first #how .how-item .resolution .text h4 {
 		margin-left: 32%;
