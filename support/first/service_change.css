@@ -3295,6 +3295,7 @@ label.accordion-open span {
 	#service-first #qna .heading {
 		width: 100%;
 		padding: 26px 0 12px;
+		background-image: none;
 	}
 }
 
