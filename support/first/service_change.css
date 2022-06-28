@@ -1043,7 +1043,10 @@ h2.heading strong {
 #service-first #how .how-item .resolution .illust {
 	width: 323px;
 	padding: 0 92px;
-	height: 285px;
+	height: 265px;
+}
+#service-first #how .how-item .resolution .text p:last-of-type {
+	margin-bottom: 0;
 }
 #service-first #how01 .resolution .illust {
 	background: var(--yellow) bottom center / 180px no-repeat url(images/how-reitem01_illust.png);
@@ -1075,7 +1078,7 @@ h2.heading strong {
 		padding-bottom: 6px;
 	}
 	#service-first #how .how-item .resolution .text {
-		padding: 18px 18px 0;
+		padding: 18px;
 	}
 	#service-first #how #how01 .resolution .text::after,
 	#service-first #how #how02 .resolution .text::after {
