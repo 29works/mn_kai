@@ -472,13 +472,7 @@ h2.heading strong {
 	left: 880px;
 }
 .cf_anim .c05 {
-	left: 1500px;
-}
-.cf_anim .c06 {
-	left: 1600px;
-}
-.cf_anim .c07 {
-	left: 1150px;
+	left: 1200px;
 }
 
 /* final movie */
@@ -494,9 +488,7 @@ h2.heading strong {
 .cf_anim .c02,
 .cf_anim .c03,
 .cf_anim .c04,
-.cf_anim .c05,
-.cf_anim .c06,
-.cf_anim .c07 {
+.cf_anim .c05 {
 	-webkit-transform: translate(1500px, 0px);
 	transform: translate(1500px, 0px);
 
@@ -506,9 +498,7 @@ h2.heading strong {
 .cf_anim .c02.show,
 .cf_anim .c03.show,
 .cf_anim .c04.show,
-.cf_anim .c05.show,
-.cf_anim .c06.show,
-.cf_anim .c07.show {
+.cf_anim .c05.show {
 	transition: opacity 1s linear 0s;
 	-webkit-animation: car_loop 22s linear -6s infinite;
 	animation: car_loop 22s linear -6s infinite;
