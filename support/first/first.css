@@ -2,12 +2,13 @@
 
 /* ===================================================================
 
-    マイナビ保育士：service_new.css
+    マイナビ介護職：first.css
 
 * --------------------------------------------------------------------
 *
 * # NORMALIZE
 * # BASE SETUP
+*   car_loop
 *   ## main__title
 *   ## service-cv
 *   ## first-list
@@ -16,7 +17,7 @@
 *   ## worries
 *   ## merit
 *   ## voice
-*   ## reliability マイナビ保育士の信頼性
+*   ## reliability マイナビ介護職の信頼性
 *   ## flow 
 
 ==================================================================== */
@@ -206,7 +207,6 @@ h2.heading {
 .contentCover {
 	background-image: url('../img/topic/common/contentCover_texture.png');
 }
-/* メインコンテンツ */
 .main-global p.txt {
 	padding: 30px 0 0;
 	margin: 0;
@@ -352,9 +352,6 @@ h2.heading {
 		width: 264px;
 		height: 44px;
 	}
-	/* #service-first #how .heading span {
-		bottom: -9px;
-	} */
 	#service-first #flow .title .heading span {
 		bottom: -16px;
 	}
@@ -419,11 +416,9 @@ h2.heading {
 }
 
 /* ------------------------------------------------------------
-*
-    
+*   car_loop
 *
 ------------------------------------------------------------ */
-
 .voice_footer {
 	position: relative;
 	margin: 1.5em 0;
@@ -468,14 +463,11 @@ h2.heading {
 .cf_anim .c05 {
 	left: 1200px;
 }
-
-/* final movie */
 .cf_anim .tn {
 	opacity: 0;
 }
 .cf_anim .tn.show {
 	transition: all 1s linear 0.5s;
-
 	opacity: 1;
 }
 .cf_anim .c01,
@@ -485,7 +477,6 @@ h2.heading {
 .cf_anim .c05 {
 	-webkit-transform: translate(1500px, 0px);
 	transform: translate(1500px, 0px);
-
 	opacity: 0;
 }
 .cf_anim .c01.show,
@@ -496,7 +487,6 @@ h2.heading {
 	transition: opacity 1s linear 0s;
 	-webkit-animation: car_loop 22s linear -6s infinite;
 	animation: car_loop 22s linear -6s infinite;
-
 	opacity: 1;
 }
 .cf_anim img {
@@ -1885,7 +1875,7 @@ h2.heading {
 }
 
 /* --------------------------------------------------------------------
-*   ## reliability マイナビ保育士の信頼性
+*   ## reliability マイナビ介護職の信頼性
 * -------------------------------------------------------------------- */
 .reliability {
 	background: url(../../assets/img/service/reliability-bg.png) no-repeat center;
@@ -1945,137 +1935,11 @@ h2.heading {
 	}
 }
 
-/*------------------------------
-
-ここからアコーディオンのCSS
-
-------------------------------*/
-.accordion label {
-	font-weight: 500;
-}
-label.accordion-open {
-	position: relative;
-	padding: 15px;
-	width: 288px;
-	height: 110px;
-	font-size: 23px;
-	font-weight: 600;
-	line-height: 1.5;
-	border: 5px solid #19cecd;
-	border-radius: 17px;
-	background: white;
-	box-shadow: 15px 18px 15px #00000047;
-}
-label.accordion-open span {
-	color: #19cecd;
-}
-@media screen and (max-width: 768px) {
-	.accordion {
-		width: 500px;
-		max-width: 100%;
-	}
-	/* チェックボックスを非表示にする */
-	.accordion-hidden {
-		display: none;
-	}
-	/* Question部分 */
-	.accordion-open {
-		display: block;
-	}
-	/* Answer部分は最初は表示しない */
-	.accordion-close {
-		display: block;
-		height: 0;
-		overflow: hidden;
-		padding: 0;
-		opacity: 0;
-		transition: 0.5s; /* 表示速度の設定 */
-	}
-	/* チェックボックスにチェックが入ったらAnswer部分を表示 */
-	.accordion-hidden:checked + .accordion-open + .accordion-close {
-		height: auto;
-		opacity: 1;
-		background: #ffffff;
-		border-radius: 16px;
-		width: 90%;
-		margin: 16px auto;
-		padding: 16px;
-		text-align: left;
-	}
-}
-@media screen and (min-width: 768px) {
-	.accordion {
-		display: grid;
-		grid-template-columns: 1fr 2fr;
-		gap: 30px;
-		width: 845px;
-		margin: 0 auto;
-		pointer-events: none;
-		margin-top: 20px;
-	}
-	label.accordion-open::after {
-		position: absolute;
-		content: '';
-		right: 126px;
-		bottom: -47px;
-		width: 26px;
-		height: 26px;
-		background: url(../../assets/img/service/plus-icon.svg);
-	}
-	.accordion label.accordion-open:nth-of-type(5)::after {
-		display: none;
-	}
-	.accordion label:nth-of-type(3) {
-		margin-top: 10px;
-	}
-
-	.accordion-close {
-		background: #f5f6f9;
-		border-radius: 10px;
-		padding: 20px;
-		text-align: left;
-	}
-	.accordion input[type='checkbox'] {
-		display: none;
-	}
-}
-@media only screen and (max-width: 639px) {
-	label.accordion-open {
-		width: 90%;
-		box-shadow: none;
-		margin: 0 auto 10px;
-	}
-	.accordion-open::before,
-	.accordion-open::after {
-		content: '';
-		width: 20px;
-		height: 4px;
-		background: #19cecd;
-		position: absolute;
-		top: 50%;
-		right: 5%;
-		transform: translateY(-50%);
-		border-radius: 30px;
-	}
-	.accordion-open::after {
-		transform: translateY(-50%) rotate(90deg);
-		transition: 0.5s;
-	}
-	.accordion-hidden:checked + .accordion-open:after {
-		transform: translateY(-50%) rotate(0);
-	}
-}
-
-#service-first .solution {
-	text-align: center;
-}
-
 /* ===================================================================
 * # worries
 *
 *
 * ------------------------------------------------------------------- */
-
 #service-first .worries.list {
 	padding-top: 30px;
 }
@@ -2211,7 +2075,6 @@ label.accordion-open span {
 #worries02 .illust {
 	background: center / contain no-repeat url(images/worries-item02_illust.png);
 }
-
 #worries03 .illust {
 	background: center / contain no-repeat url(images/worries-item03_illust.png);
 }
@@ -2343,7 +2206,6 @@ label.accordion-open span {
 		font-size: 20px;
 	}
 }
-
 @media only screen and (max-width: 376px) {
 	#service-first .worries-item .text h3 {
 		font-size: 18px;
@@ -2368,10 +2230,6 @@ label.accordion-open span {
 #service-first #merit h2 {
 	padding-top: 100px;
 }
-/* #service-first #merit h2 img {
-	width: 327px;
-	height: 60px;
-} */
 #service-first #merit .cf_anim {
 	height: 42px;
 }
@@ -2405,7 +2263,6 @@ label.accordion-open span {
 #service-first .merit-item .text h3 {
 	margin-bottom: 6px;
 }
-
 #service-first .merit-item .text h3 strong {
 	color: var(--orange);
 }
@@ -2414,6 +2271,9 @@ label.accordion-open span {
 }
 #service-first .merit-item .illust {
 	width: 297px;
+}
+#service-first .solution {
+	text-align: center;
 }
 @media only screen and (max-width: 639px) {
 	#service-first #merit .solution {
@@ -2465,100 +2325,6 @@ label.accordion-open span {
 *
 *
 * ------------------------------------------------------------------- */
-.flow .highlighter {
-	color: #19cecd;
-	font-weight: bold;
-}
-.flow h2::before {
-	left: -253px;
-	bottom: 88px;
-}
-.flow h2 {
-	color: #241833;
-	font-weight: 600;
-	padding-bottom: 40px;
-}
-.flow h2 span {
-	position: relative;
-}
-.flow h3 {
-	font-size: large;
-	font-weight: 700;
-	line-height: 1.5;
-	margin-bottom: 7%;
-}
-.flow__head {
-	display: flex;
-	margin-bottom: 40px;
-	flex-wrap: wrap;
-}
-.flow__item .flow__item__wrap::after {
-	content: '';
-	width: 12px;
-	height: 12px;
-	border: 0px;
-	border-top: solid 3px #19cecd;
-	border-right: solid 3px #19cecd;
-	-ms-transform: rotate(45deg);
-	-webkit-transform: rotate(45deg);
-	transform: rotate(45deg);
-	position: absolute;
-	top: 50%;
-	right: -54px;
-	margin-top: -6px;
-}
-.flow__item ul li {
-	display: flex;
-	flex-direction: column;
-}
-.flow__item .flow__item__wrap {
-	display: flex;
-	position: relative;
-	background: white;
-	border-radius: 16px;
-	margin-left: 56px;
-	height: 204px;
-	align-items: center;
-}
-.flow__item .flow__item__wrap::before {
-	content: '';
-	position: absolute;
-	width: 8px;
-	height: 100%;
-	border: 0px;
-	border-radius: 30px;
-	background-color: #94efea;
-	left: -40px;
-}
-.flow__item ul li:last-of-type .flow__item__wrap::before {
-	height: 50%;
-	top: 0;
-}
-.flow__item-text {
-	flex: 50%;
-	padding: 0 64px;
-}
-.flow__item-illust {
-	position: relative;
-	height: 233px;
-	bottom: 14px;
-}
-.flow__item .flow__item__wrap::after {
-	top: 50%;
-	right: auto;
-	left: -42px;
-	margin-top: -6px;
-	transform: rotate(135deg);
-}
-.flow__item ul li:last-of-type .flow__item__wrap::after {
-	border-radius: 300px;
-	background-color: #19cecd;
-}
-
-/* --------------------------------------------------------------------
-*   ## flow 
-* -------------------------------------------------------------------- */
-
 #service-first #flow .flow__wrap {
 	display: flex;
 	width: 960px;
@@ -2936,32 +2702,6 @@ label.accordion-open span {
 	#service-first #flow .flow__wrap .slowly li:last-of-type::after {
 		background-position: right bottom;
 	}
-	.flow__item .flow__item__wrap {
-		flex-direction: column-reverse;
-	}
-	.flow__item-illust {
-		width: 90%;
-		bottom: 17px;
-	}
-	.flow__item-text {
-		position: relative;
-		padding: 0;
-	}
-	.flow__item-text::before {
-		position: absolute;
-		content: '';
-		width: 98%;
-		height: 155px;
-		background-color: #d3faf8;
-		border-radius: 16px;
-		top: -173px;
-	}
-	.flow .highlighter {
-		color: #19cecd;
-	}
-	.what-support__inner img {
-		margin-top: 0;
-	}
 	#service-first #flow .approach h3 {
 		line-height: 1.5;
 	}
@@ -3228,14 +2968,12 @@ label.accordion-open span {
 		bottom: 7px;
 	}
 }
-
 #service-first .service-cv__btn {
 	margin: 16px auto 13px;
 	min-width: fit-content;
 	height: fit-content;
 	padding: 12px 29px 12px 22px;
 }
-
 #service-first .voicelist-item-txt {
 	font-size: 14px;
 	line-height: 1.4;
@@ -3293,7 +3031,6 @@ label.accordion-open span {
 /*
 	アコーディオン(よくある質問) 
 ——————————————————————————————————————————————————————————————————*/
-
 #service-first #qna .cp_actab {
 	margin-bottom: 0;
 }
