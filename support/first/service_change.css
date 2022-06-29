@@ -88,6 +88,9 @@ p {
 .sp {
 	display: none;
 }
+h2 strong {
+	font-size: 35px;
+}
 @media screen and (min-width: 769px) {
 	body {
 		margin-top: 0;
@@ -110,6 +113,9 @@ p {
 		font-size: 13.5px;
 		color: #474747;
 	}
+	h2 strong {
+		font-size: 30px;
+	}
 }
 
 /* ===================================================================
@@ -120,19 +126,14 @@ p {
 .heading {
 	text-align: center;
 }
-.logo {
-	width: 334px;
-	height: 57px;
+.orange {
+	color: var(--orange);
 }
 h2.heading {
 	text-align: center;
 	padding: 70px 0 12px;
 	line-height: 1.4;
 	font-size: 30px;
-}
-h2.heading strong {
-	color: var(--orange);
-	font-size: 34px;
 }
 .breadcrumb {
 	margin: 0 auto;
@@ -325,13 +326,6 @@ h2.heading strong {
 #service-first .title .service__wrap div p {
 	line-height: 1.5;
 }
-
-#service-first #merit .heading span,
-#service-first #how .heading span,
-#service-first #flow .title .heading span {
-	position: relative;
-	bottom: -19px;
-}
 @media only screen and (max-width: 639px) {
 	h2.heading {
 		font-size: 23px;
@@ -358,9 +352,9 @@ h2.heading strong {
 		width: 264px;
 		height: 44px;
 	}
-	#service-first #how .heading span {
+	/* #service-first #how .heading span {
 		bottom: -9px;
-	}
+	} */
 	#service-first #flow .title .heading span {
 		bottom: -16px;
 	}
@@ -941,7 +935,7 @@ h2.heading strong {
 	background: var(--gray2) left 35% bottom / 300px no-repeat url(images/how_illust.png);
 }
 #service-first #how .heading {
-	background: bottom center / 850px no-repeat url(images/how-bg.png);
+	background: bottom center / 772px no-repeat url(images/how-bg.png);
 	padding-bottom: 12px;
 }
 #service-first #how .heading h2::before {
@@ -953,7 +947,7 @@ h2.heading strong {
 	left: 0;
 	right: 0;
 	margin: auto;
-	top: -22px;
+	top: -34px;
 }
 #service-first #how::after {
 	content: '';
@@ -1771,12 +1765,11 @@ h2.heading strong {
 }
 @media only screen and (max-width: 639px) {
 	#service-first #voice .heading {
-		line-height: 0.2;
+		line-height: 1.2;
 		padding: 40px 0 23px;
 	}
-	#service-first #voice .heading span {
-		position: relative;
-		bottom: -12px;
+	#service-first #voice .heading strong {
+		font-size: 6.3vw;
 	}
 	#service-first #voice .voicelist-item__head__text h3 {
 		font-size: 18px;
